@@ -70,7 +70,7 @@ Sub-ranges with fewer than two elements are never pushed. Result: 255 bytes sort
 4. Run the project (**Debug Main Project**). Every program ends in a `GOTO terminate` loop — pause it there.
 5. Open **Window ▸ Target Memory Views ▸ File Registers** and look at the addresses listed in the lab's README.
 
-All sources start with the same configuration: `CONFIG OSC = INTIO67` (internal oscillator) and `CONFIG WDT = OFF` (watchdog disabled).
+Every source except `hard/0924_quicksort.X/hard_924.asm` starts with the same configuration: `CONFIG OSC = INTIO67` (internal oscillator) and `CONFIG WDT = OFF` (watchdog disabled). The quicksort source has no `CONFIG` lines, so it builds with the device's default configuration bits.
 
 ## Repository layout
 

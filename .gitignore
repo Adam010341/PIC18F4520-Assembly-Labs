@@ -11,3 +11,6 @@ debug/
 # Editor / OS noise
 .DS_Store
 *.swp
+
+# MDB simulation log written by the figure-regeneration steps
+sim.log
