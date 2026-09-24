@@ -1,0 +1,19 @@
+# hard/0924_quicksort.X, data RAM 0x100-0x1FF, 16 bytes per row
+# MDB simulator, halted at 0x00CE (terminate loop): sort finished
+# cycles: 29699 (MAIN -> terminate); 31495 from reset
+06   06   06   07   07   08   09   0b   0c   0d   0d   0d   0e   0f   10   13
+14   14   16   17   19   1b   1b   1b   1e   1e   20   20   21   21   21   23
+23   23   24   25   26   26   27   28   29   29   2a   2a   2b   2b   2b   2b
+2c   2c   32   35   35   36   37   3a   3c   3c   3d   3e   40   41   42   45
+47   4b   4c   4c   4c   4f   51   53   54   54   54   54   55   55   57   57
+59   5a   5a   5b   5c   5c   5c   5d   5d   5d   5f   61   62   62   62   65
+65   66   66   68   69   69   69   6a   6a   6a   6c   6c   6e   6e   6e   70
+71   73   73   73   75   76   78   79   79   79   7b   7d   7e   7e   7f   81
+81   82   84   85   85   85   87   88   8a   8a   8b   8b   8e   8f   91   92
+93   93   94   95   97   97   97   98   9b   9c   9e   9f   a2   a2   a3   a5
+a7   a7   a9   aa   ac   ac   ac   ac   ac   ad   af   b2   b3   b7   b8   b9
+ba   ba   bb   bd   bf   c1   c2   c3   c4   c4   c4   c5   c5   c6   c6   c6
+c8   c8   c8   c8   c8   ca   cd   ce   cf   cf   d3   d5   d5   d9   d9   da
+dc   dc   de   de   de   df   e1   e1   e2   e2   e2   e2   e2   e3   e3   e4
+e5   e7   e7   e8   e8   e8   e9   ea   ea   eb   eb   eb   eb   ee   ee   ee
+ee   ef   f0   f4   f6   f7   f9   fa   fb   fb   fc   fd   fd   fe   ff   00
