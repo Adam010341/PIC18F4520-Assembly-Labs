@@ -42,7 +42,11 @@
 0x300 …      (left, right) 軟體堆疊   ← FSR2
 ```
 
-少於兩個元素的子區間不會被推入堆疊。結果:255 bytes 在 **31,495 個週期**(含資料載入程式)內排序完成,整個程式(排序常式加載入程式)只佔 **210 bytes flash**。傾印出的 RAM 內容已與 Python `sorted()` 對原輸入的結果逐 byte 比對,完全一致。
+少於兩個元素的子區間不會被推入堆疊。結果:255 bytes 在 **31,495 個週期**(資料載入程式 1,796、排序本身 29,699)內排序完成,整個程式(排序常式加載入程式)只佔 **210 bytes flash**。傾印出的 RAM 內容已與 Python `sorted()` 對原輸入的結果逐 byte 比對,完全一致。
+
+![排序前後的資料 RAM 0x100–0x1FE 熱圖](hard/0924_quicksort.X/figures/ram_heatmap.png)
+
+*資料 RAM 中的陣列,每格一個 byte(顏色越深值越大),由 MDB 模擬器分別在資料載入程式剛結束時(左)與 29,699 個週期後到達停止迴圈時(右)傾印:255 個 byte 全部變成遞增排列,`06` … `FF`。原始傾印、MDB 腳本與繪圖腳本:[`hard/0924_quicksort.X/figures/`](hard/0924_quicksort.X/figures)。*
 
 ## 這些 lab 展現的能力
 
@@ -80,7 +84,7 @@
 │   └── 0924_merge_sorted.X/
 ├── hard/
 │   ├── 0916_longest_ones_run.X/
-│   └── 0924_quicksort.X/
+│   └── 0924_quicksort.X/             # + figures/(RAM 熱圖、MDB 傾印、繪圖腳本)
 ├── README.md
 └── README.zh-TW.md
 ```

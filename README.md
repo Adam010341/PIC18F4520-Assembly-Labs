@@ -42,7 +42,11 @@ Data RAM
 0x300 …      software stack of (left, right) pairs   ← FSR2
 ```
 
-Sub-ranges with fewer than two elements are never pushed. Result: 255 bytes sorted in **31,495 cycles** (including the data loader), with the whole program — sort routine and loader — taking just **210 bytes of flash**. The dumped RAM was checked byte-for-byte against `sorted()` of the input in Python.
+Sub-ranges with fewer than two elements are never pushed. Result: 255 bytes sorted in **31,495 cycles** (1,796 for the data loader, 29,699 for the sort itself), with the whole program — sort routine and loader — taking just **210 bytes of flash**. The dumped RAM was checked byte-for-byte against `sorted()` of the input in Python.
+
+![Heatmap of data RAM 0x100–0x1FE before and after the sort](hard/0924_quicksort.X/figures/ram_heatmap.png)
+
+*The array in data RAM, one cell per byte (darker = larger), dumped from the MDB simulator right after the data loader (left) and at the halt loop 29,699 cycles later (right): all 255 bytes end up in ascending order, `06` … `FF`. Raw dumps, MDB script and plotting script: [`hard/0924_quicksort.X/figures/`](hard/0924_quicksort.X/figures).*
 
 ## What these labs demonstrate
 
@@ -80,7 +84,7 @@ All sources start with the same configuration: `CONFIG OSC = INTIO67` (internal 
 │   └── 0924_merge_sorted.X/
 ├── hard/
 │   ├── 0916_longest_ones_run.X/
-│   └── 0924_quicksort.X/
+│   └── 0924_quicksort.X/             # + figures/ (RAM heatmap, MDB dumps, plot script)
 ├── README.md
 └── README.zh-TW.md
 ```
