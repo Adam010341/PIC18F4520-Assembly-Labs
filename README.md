@@ -1,5 +1,9 @@
 # PIC18F4520 Assembly Labs
 
+![PIC18](https://img.shields.io/badge/MCU-PIC18F4520-EE2223)
+![Assembly](https://img.shields.io/badge/language-PIC18%20assembly%20%28MPASM%29-6E4C13)
+![MPLAB X](https://img.shields.io/badge/simulator-MPLAB%20X%20v5.20-555)
+
 **English** · [繁體中文](README.zh-TW.md)
 
 Hand-written assembly for the **PIC18F4520** 8-bit microcontroller — six lab exercises in three difficulty levels, from register arithmetic up to an **in-place iterative quicksort** with a software stack. Every lab is a ready-to-open **MPLAB X** project, runs entirely in the MPLAB simulator (no board needed), and has its result verified and documented.

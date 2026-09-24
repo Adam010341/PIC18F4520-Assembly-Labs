@@ -1,5 +1,9 @@
 # PIC18F4520 Assembly Labs
 
+![PIC18](https://img.shields.io/badge/MCU-PIC18F4520-EE2223)
+![Assembly](https://img.shields.io/badge/language-PIC18%20assembly%20%28MPASM%29-6E4C13)
+![MPLAB X](https://img.shields.io/badge/simulator-MPLAB%20X%20v5.20-555)
+
 [English](README.md) · **繁體中文**
 
 以 **PIC18F4520** 8 位元微控制器的組合語言完成的六個實驗,依難度分成三級:從暫存器運算,到使用軟體堆疊(software stack)的**原地迭代式快速排序(in-place iterative quicksort)**。每個 lab 都是可直接開啟的 **MPLAB X** 專案,完全在 MPLAB 模擬器中執行(不需要開發板),並且都驗證並記錄了執行結果。
