@@ -70,7 +70,7 @@
 4. 執行專案(**Debug Main Project**)。每個程式都結束在 `GOTO terminate` 迴圈 — 在那裡暫停即可。
 5. 開啟 **Window ▸ Target Memory Views ▸ File Registers**,查看該 lab README 列出的位址。
 
-所有原始碼開頭都使用相同的組態:`CONFIG OSC = INTIO67`(內部振盪器)與 `CONFIG WDT = OFF`(關閉看門狗)。
+除了 `hard/0924_quicksort.X/hard_924.asm`,所有原始碼開頭都使用相同的組態:`CONFIG OSC = INTIO67`(內部振盪器)與 `CONFIG WDT = OFF`(關閉看門狗)。quicksort 原始碼沒有 `CONFIG` 行，因此使用晶片預設的組態位元。
 
 ## Repository 結構
 
