@@ -1,0 +1,13 @@
+# MPLAB X build output (regenerated on every build)
+build/
+dist/
+debug/
+
+# Machine-specific files that MPLAB X regenerates when a project is opened
+**/nbproject/private/
+**/nbproject/Makefile-local-*.mk
+**/nbproject/Makefile-genesis.properties
+
+# Editor / OS noise
+.DS_Store
+*.swp
